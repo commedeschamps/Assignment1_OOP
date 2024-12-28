@@ -1,0 +1,5 @@
+Harry Potter 21 Male Math 78 Physics 89 Defense 99
+Ron Weasley 20 Male Charms 75 Herbology 63 Potions 82
+Hermione Granger 19 Female Arithmancy 100 Transfiguration 99 History 95
+Luna Lovegood 20 Female Astronomy 46 CareOfMagicalCreatures 87 Divination 67
+Draco Malfoy 19 Male Potions 21 Defense 45 Herbology 43
