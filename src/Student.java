@@ -35,7 +35,7 @@ public class Student extends Person {
         calculateGPA();
     }
 
-    public void setGrade(int index, double grade) {
+    public void setGradeForCourse(int index, double grade) {
         if (index >= 0 && index < grades.size()) {
             grades.set(index, grade);
             calculateGPA();
