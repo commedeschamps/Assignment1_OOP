@@ -1,6 +1,4 @@
-import java.io.*;
 import java.util.*;
-
 
 public class Student extends Person {
     private static int studentIDCounter = 1;
@@ -27,6 +25,33 @@ public class Student extends Person {
         gpa = totalCredits > 0 ? Math.round((totalGrade / totalCredits) * 100.0) / 100.0 : 0.0;
     }
 
+    public void setGrades(List<Double> grades) {
+        this.grades = grades;
+        calculateGPA();
+    }
+
+    public void setCredits(List<Integer> credits) {
+        this.credits = credits;
+        calculateGPA();
+    }
+
+    public void setGradeForSubject(int index, double grade) {
+        if (index >= 0 && index < grades.size()) {
+            grades.set(index, grade);
+            calculateGPA();
+        }
+    }
+
+    public void setCreditForSubject(int index, int credit) {
+        if (index >= 0 && index < credits.size()) {
+            credits.set(index, credit);
+            calculateGPA();
+        }
+    }
+
+    public double getGPA() {
+        return gpa;
+    }
 
     @Override
     public String toString() {
